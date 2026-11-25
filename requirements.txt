@@ -1,0 +1,2 @@
+pyxel>=3.0.4  # 3.0.4 から cube のモデル縁取り (Node.outline) を使用
+pillow  # preview.py 用 (ゲーム本体は pyxel のみ)

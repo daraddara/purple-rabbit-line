@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# プレビュー画像の版別履歴はローカルに残し, リポジトリには最新分だけ入れる
+previews/preview_*.png
+!previews/preview.png
+!previews/preview_start.png
+!previews/preview_characters.png
+
+# OS / エディタ
+.DS_Store
+*.swp

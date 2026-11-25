@@ -1,0 +1,30 @@
+newmtl belly
+Kd 0.961 0.780 0.494
+
+newmtl black
+Kd 0.000 0.000 0.000
+
+newmtl kid
+Kd 0.941 0.529 0.110
+
+newmtl mole
+Kd 0.788 0.416 0.169
+
+newmtl pink
+Kd 0.957 0.745 0.808
+
+newmtl purple
+Kd 0.624 0.251 0.957
+
+newmtl purple_dark
+Kd 0.451 0.149 0.780
+
+newmtl red
+Kd 0.898 0.220 0.231
+
+newmtl squirrel
+Kd 0.941 0.553 0.298
+
+newmtl white
+Kd 1.000 0.945 0.910
+
