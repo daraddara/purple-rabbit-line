@@ -18,10 +18,6 @@
   table { border-collapse: collapse; }
   th, td { border: 1px solid #bbb; padding: 4px 12px; text-align: left; }
   th { background: #eef6e3; }
-  .pad-toggle a { display: inline-block; padding: 2px 14px; margin: 0 2px;
-                  border: 2px solid #80c241; border-radius: 999px;
-                  text-decoration: none; color: #2f6b1a; font-weight: bold; }
-  .pad-toggle a.current { background: #80c241; color: #fff; }
   .play-button { display: inline-block; font-size: 1.15em; font-weight: bold;
                  padding: 10px 28px; color: #fff; background: #8a2be2;
                  border-radius: 999px; text-decoration: none; }
@@ -37,14 +33,11 @@
 
 <section>
   <h2>遊ぶ</h2>
-  <p class="pad-toggle">仮想パッド:
-    <a id="pad-on" href="?gamepad=on">ON</a>
-    <a id="pad-off" href="?gamepad=off">OFF</a>
-    (切り替えるとページが再読み込みされます)
-  </p>
-  <p><a id="play-link" class="play-button" target="_blank" rel="noopener"
-        href="https://kitao.dev/pyxel/launcher/?run=daraddara/purple-rabbit-line/main/main&gamepad=enabled">▶ ゲームを起動</a></p>
-  <p>ボタンを押すと、ゲームが新しいタブで開きます。初回は読み込みに少し時間がかかります。</p>
+  <p><a class="play-button" target="_blank" rel="noopener"
+        href="https://kitao.dev/pyxel/launcher/?run=daraddara/purple-rabbit-line/main/main&gamepad=enabled">▶ ゲームを起動（仮想パッド ON）</a></p>
+  <p><a class="play-button" target="_blank" rel="noopener"
+        href="https://kitao.dev/pyxel/launcher/?run=daraddara/purple-rabbit-line/main/main&gamepad=disabled">▶ ゲームを起動（仮想パッド OFF）</a></p>
+  <p>ボタンを押すと、ゲームが新しいタブで開きます。初回は読み込みに少し時間がかかります。スマホ・タブレットで遊ぶ場合は ON 版をどうぞ。</p>
 </section>
 
 <section class="shots">
@@ -90,13 +83,5 @@
   / MIT License / Pyxel 3.0.4 で動作</p>
 </footer>
 
-<script>
-  const gpParam = new URLSearchParams(location.search).get("gamepad");
-  const gp = gpParam === "off" ? "disabled" : "enabled";
-  document.getElementById(gp === "enabled" ? "pad-on" : "pad-off")
-    .classList.add("current");
-  document.getElementById("play-link").href =
-    "https://kitao.dev/pyxel/launcher/?run=daraddara/purple-rabbit-line/main/main&gamepad=" + gp;
-</script>
 </body>
 </html>
