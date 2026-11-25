@@ -1,4 +1,4 @@
-# PURPLE RABBIT LINE — v0.06 紫うさぎの隊列スネーク (pyxel.cube版)
+# PURPLE RABBIT LINE — v0.07 紫うさぎの隊列スネーク (pyxel.cube版)
 
 正式タイトルは **PURPLE RABBIT LINE** です (開発中の呼称: 3D SNAKE。
 画面には出さず、識別用にだけ残しています)。
@@ -109,6 +109,7 @@ python main.py
 | ファイル | 内容 |
 |---|---|
 | `main.py` | Pyxel アプリ本体 (入力・状態遷移・HUD・サウンド) |
+| `index.html` | GitHub Pages 用の紹介・プレイ用ページ (ゲーム本体を埋め込み) |
 | `snake_logic.py` | ゲームロジック (Pyxel 非依存、軌跡・ジャンプ履歴・衝突判定) |
 | `characters.py` | リス / オレンジの子のモデル定義 |
 | `rabbit_model.py` | 紫うさぎのモデル (歩行デモから流用) |
@@ -133,7 +134,7 @@ python main.py
 - フレーム時間 (VM実測, 隊列15体): 中央値 約5.6ms / フレーム
   (30fps の予算 33ms に対して十分に余裕あり)
 
-バージョン: 0.06 (main.py 先頭の VERSION 定義値をタイトル画面が参照して表示。
+バージョン: 0.07 (main.py 先頭の VERSION 定義値をタイトル画面が参照して表示。
 2026-11-25 に版数を 0.00 へリセットした。配布 zip の名前も
 ゲームタイトルに合わせ purple-rabbit-line-v<版>.zip とする)
 

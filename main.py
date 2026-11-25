@@ -51,7 +51,7 @@ from models import CUSTOM_COLORS
 from cube_render import Scene, CamFollow, TRAIN_T, EFFECT_FRAMES
 from snake_logic import (SnakeGame, FIELD_SIDES, FIELD_APOTHEM)
 
-VERSION = "0.06"                  # 表示はこの定義値を参照する (直書きしない)
+VERSION = "0.07"                  # 表示はこの定義値を参照する (直書きしない)
 GAME_TITLE = "PURPLE RABBIT LINE"  # 正式タイトル (タイトルロゴと窓タイトル)
 CODENAME = "3D SNAKE"  # 開発中の呼称. 画面には出さず識別用に残す
 
